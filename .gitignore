@@ -1,0 +1,10 @@
+# Исключим из репозитория настройки PHPStorm
+.idea/
+ 
+# Исключение .map файлов
+*.map
+*.json
+ 
+# gulp
+gulpfile.js
+node_modules
