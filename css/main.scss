@@ -33,8 +33,11 @@ footer{
 
 .header-main-container {
   width: 980px;
-  outline: 1px solid red;
+  display: flex;
+  justify-content: space-between;
 }
+
+$nav-a-padding: 20px;
 
 nav {
   background-color: #777777;
@@ -47,16 +50,71 @@ nav {
     text-decoration: none;
     font-family: "PTSansRegular", sans-serif;
     font-size: 30px;
+    padding: 0 $nav-a-padding;
+    position: relative;
 
     &::after {
       content: "|";
+      position: absolute;
+      top:0;
+      right:-3px;
     }
 
     &:last-child::after {
       display: none;
     }
 
+    &:hover {
+      background-image: linear-gradient(to right, white calc(100% - 2*#{$nav-a-padding}) , transparent calc(100% - 2*#{$nav-a-padding}) );
+      background-position: $nav-a-padding 37px;
+      background-repeat: no-repeat;
+      background-size: 100% 1px;
+    }
+
+  }
+}
+
+.logo-and-title {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 115px;
+  height: 115px;
+  background-color: #767676;
+}
+
+.company-title {
+  width: 200px;
+  height: 115px;
+  padding-left: 14px;
+  padding-top: 5px;
+  font-family: "Myriad Pro Regular", sans-serif;
+  font-size: 40px;
+  line-height: 32px;
+  position: relative;
+
+  .slogan {
+    white-space: nowrap;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    position: absolute;
+    left: 16px;
+    bottom: 0;
   }
 
 }
+
+.contact-phones {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  align-self: center;
+  font-family: "OpenSansCondensedLight", sans-serif;
+  font-size: 40px;
+  color: #767676;
+}
+
 

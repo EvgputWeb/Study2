@@ -1,9 +1,30 @@
 @font-face {
-  font-family: "PTSansRegular";
-  src: url("../fonts/PTSansRegular/PTSansRegular.eot");
-  src: url("../fonts/PTSansRegular/PTSansRegular.eot?#iefix")format("embedded-opentype"),
-  url("../fonts/PTSansRegular/PTSansRegular.woff") format("woff"),
-  url("../fonts/PTSansRegular/PTSansRegular.ttf") format("truetype");
+  font-family: 'PTSansRegular';
+  src: url('../fonts/PTSansRegular/PTSansRegular.eot');
+  src: url('../fonts/PTSansRegular/PTSansRegular.eot?#iefix')format('embedded-opentype'),
+  url('../fonts/PTSansRegular/PTSansRegular.woff') format('woff'),
+  url('../fonts/PTSansRegular/PTSansRegular.ttf') format('truetype');
   font-style: normal;
   font-weight: normal;
+}
+
+@font-face {
+  font-family: 'OpenSansCondensedLight';
+  src: url('../fonts/OpenSansCondensedLight/opensanscondensed-light.eot');
+  src: url('../fonts/OpenSansCondensedLight/opensanscondensed-light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/OpenSansCondensedLight/opensanscondensed-light.woff2') format('woff2'),
+  url('../fonts/OpenSansCondensedLight/opensanscondensed-light.woff') format('woff'),
+  url('../fonts/OpenSansCondensedLight/opensanscondensed-light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Myriad Pro Regular';
+  src: url('../fonts/MyriadProRegular/MyriadPro-Regular.eot');
+  src: url('../fonts/MyriadProRegular/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/MyriadProRegular/MyriadPro-Regular.woff') format('woff'),
+  url('../fonts/MyriadProRegular/MyriadPro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
