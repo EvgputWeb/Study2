@@ -1,5 +1,62 @@
+@import "_fonts.scss";
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 html, body {
   height: 100%;
-  background-color: white;
-  color: gray;
 }
+
+body{
+  display: flex;
+  flex-direction: column;
+}
+
+.main{
+  flex: 1 0 auto;
+}
+
+footer{
+  flex: 0 0 auto;
+  height: 220px;
+  background-color: #767676;
+}
+
+.header-main {
+  background-color: #dcdcdc;
+  height: 230px;
+  display: flex;
+  justify-content: center;
+}
+
+.header-main-container {
+  width: 980px;
+  outline: 1px solid red;
+}
+
+nav {
+  background-color: #777777;
+  padding: 24px 0;
+  display: flex;
+  justify-content: center;
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-family: "PTSansRegular", sans-serif;
+    font-size: 30px;
+
+    &::after {
+      content: "|";
+    }
+
+    &:last-child::after {
+      display: none;
+    }
+
+  }
+
+}
+
