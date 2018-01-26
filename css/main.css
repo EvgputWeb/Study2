@@ -135,4 +135,9 @@ nav a:hover {
   color: #767676;
 }
 
+.bg-img {
+  height: 400px;
+  background-image: url("../img/pixelplus.jpg");
+}
+
 /*# sourceMappingURL=main.css.map */
