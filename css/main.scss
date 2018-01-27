@@ -37,6 +37,7 @@ footer{
   justify-content: space-between;
 }
 
+$nav-a-color: #FFFFFF;
 $nav-a-padding: 20px;
 
 nav {
@@ -46,7 +47,7 @@ nav {
   justify-content: center;
 
   a {
-    color: white;
+    color: $nav-a-color;
     text-decoration: none;
     font-family: "PTSansRegular", sans-serif;
     font-size: 30px;
@@ -65,16 +66,17 @@ nav {
     }
 
     &:hover {
-      background-image: linear-gradient(to right, white calc(100% - 2*#{$nav-a-padding}) , transparent calc(100% - 2*#{$nav-a-padding}) );
+      background-image: linear-gradient(to right, $nav-a-color 0%, $nav-a-color 100%);
       background-position: $nav-a-padding 37px;
       background-repeat: no-repeat;
-      background-size: 100% 1px;
+      background-size: calc(100% - 2*#{$nav-a-padding}) 2px;
     }
 
   }
 }
 
 .logo-and-title {
+  flex-grow: 1;
   display: flex;
   align-items: center;
 }
@@ -110,14 +112,102 @@ nav {
 .contact-phones {
   margin: 0;
   padding: 0;
+  flex-grow: 1;
   list-style: none;
+  text-align: right;
   align-self: center;
   font-family: "OpenSansCondensedLight", sans-serif;
   font-size: 40px;
   color: #767676;
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .bg-img {
   height: 400px;
+  width: 100%;
+  background-color: #f8f8f8;
   background-image: url("../img/pixelplus.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
 }
+
+.content-wrapper {
+  height: 785px;
+  width: 980px;
+  padding: 30px 0;
+  outline:1px solid red;
+  display: flex;
+}
+
+.content aside {
+  min-width: 350px;
+  height: 560px;
+  padding: 8px 60px 20px 34px;
+  background-color: #777777;
+  color: #ffffff;
+}
+
+.content aside h2 {
+  font-family: PTSansBold, sans-serif;
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.content aside section {
+  margin-bottom: 24px;
+}
+
+.content aside time {
+  font-family: PTSansItalic, sans-serif;
+  font-size: 14px;
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 6px;
+}
+
+.content aside p {
+  font-family: PTSansRegular, sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  margin: 0;
+  padding: 0;
+}
+
+.content-wrapper main {
+  flex-grow: 1;
+  color: #767676;
+  padding: 8px 30px 20px 58px;
+}
+
+.content main h1 {
+  font-family: PTSansRegular, sans-serif;
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.content main p {
+  font-family: PTSansRegular, sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
