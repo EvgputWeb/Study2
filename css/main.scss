@@ -9,16 +9,16 @@ html, body {
   height: 100%;
 }
 
-body{
+body {
   display: flex;
   flex-direction: column;
 }
 
-.main{
+.main {
   flex: 1 0 auto;
 }
 
-footer{
+footer {
   flex: 0 0 auto;
   height: 220px;
   background-color: #767676;
@@ -140,7 +140,6 @@ nav {
   height: 785px;
   width: 980px;
   padding: 30px 0;
-  outline:1px solid red;
   display: flex;
 }
 
@@ -204,10 +203,58 @@ nav {
   margin-bottom: 20px;
 }
 
+.footer-wrapper {
+  padding: 44px 0 0 0;
+  display: flex;
+  width: 980px;
+  margin: 0 auto;
 
+  font-family: "PTSansRegular", sans-serif;
+  font-size: 14px;
+  color: #FFFFFF;
 
+  a {
+    color: #FFFFFF;
+  }
+}
 
+$copyright-width : 350px;
+$footer-nav-width : 406px;
+$about-width : 980px - $copyright-width - $footer-nav-width;
 
+footer .copyright {
+  flex-grow: 1;
+  width: $copyright-width;
+  max-width: $copyright-width;
+}
+
+footer .footer-nav {
+  flex-grow: 1;
+  width: $footer-nav-width;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  ul>li {
+    margin-bottom: 10px;
+  }
+
+}
+
+footer .about {
+  width: $about-width;
+  flex-grow: 1;
+
+  img {
+    float: left;
+    margin-right: 6px;
+    margin-top: 3px;
+  }
+
+}
 
 
 

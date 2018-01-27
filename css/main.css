@@ -173,7 +173,6 @@ nav a:hover {
   height: 785px;
   width: 980px;
   padding: 30px 0;
-  outline: 1px solid red;
   display: flex;
 }
 
@@ -235,6 +234,52 @@ nav a:hover {
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
+}
+
+.footer-wrapper {
+  padding: 44px 0 0 0;
+  display: flex;
+  width: 980px;
+  margin: 0 auto;
+  font-family: "PTSansRegular", sans-serif;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
+.footer-wrapper a {
+  color: #FFFFFF;
+}
+
+footer .copyright {
+  flex-grow: 1;
+  width: 350px;
+  max-width: 350px;
+}
+
+footer .footer-nav {
+  flex-grow: 1;
+  width: 406px;
+}
+
+footer .footer-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+footer .footer-nav ul > li {
+  margin-bottom: 10px;
+}
+
+footer .about {
+  width: 224px;
+  flex-grow: 1;
+}
+
+footer .about img {
+  float: left;
+  margin-right: 6px;
+  margin-top: 3px;
 }
 
 /*# sourceMappingURL=main.css.map */
